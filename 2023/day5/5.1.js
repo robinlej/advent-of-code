@@ -1,5 +1,6 @@
+const path = require("path");
 const fs = require("node:fs");
-fs.readFile("input.txt", "utf8", (err, data) => {
+fs.readFile(path.resolve(__dirname, "input.txt"), "utf8", (err, data) => {
     console.log(getLocation(data));
 });
 
